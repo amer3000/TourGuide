@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Carrollton Tour Guide</string>
+    <string name="title_activity_parks">ParksActivity</string>
 </resources>

@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class ResturantsActivity extends AppCompatActivity {
+public class RestaurantsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resturants);
+        setContentView(R.layout.activity_restaurants);
 
         final ArrayList<PointOfInterest> pointOfInterests = new ArrayList<>();
         pointOfInterests.add(new PointOfInterest("Babe's Chicken"));
