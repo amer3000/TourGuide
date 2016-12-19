@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link RestaurantsActivity}
                 Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
 
                 // Start the new activity
@@ -28,15 +28,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        // Find the View that shows the Resturants category
+        // Find the View that shows the parks category
         TextView parks = (TextView) findViewById(R.id.parks);
         // Set a click listener on that View
         parks.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link ParksActivity}
                 Intent parksIntent = new Intent(MainActivity.this, ParksActivity.class);
 
                 // Start the new activity
@@ -44,15 +43,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        // Find the View that shows the Resturants category
+        // Find the View that shows the Shops category
         TextView shops = (TextView) findViewById(R.id.shops);
         // Set a click listener on that View
         shops.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link ShopsActivity}
                 Intent shopsIntent = new Intent(MainActivity.this, ShopsActivity.class);
 
                 // Start the new activity
@@ -60,16 +58,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        // Find the View that shows the Resturants category
+        // Find the View that shows the historic category
         TextView historic = (TextView) findViewById(R.id.historic);
         // Set a click listener on that View
         historic.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link HistoricsActivity}
                 Intent historicIntent = new Intent(MainActivity.this, HistoricActivity.class);
 
                 // Start the new activity

@@ -31,4 +31,6 @@ public class PointOfInterest {
     public int getImageResourceId() {
         return 0;
     }
+
+    public String toString() { return mName; }
 }
