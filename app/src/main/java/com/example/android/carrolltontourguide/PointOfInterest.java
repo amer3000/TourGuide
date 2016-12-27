@@ -18,13 +18,16 @@ public class PointOfInterest {
         mDescription = description;
     }
 
+    public void setImage(int id) {
+        mImageResourceId = id;
+    }
 
     public boolean hasImage() {
-        return false;
+        return mImageResourceId != 0;
     }
 
     public int getImageResourceId() {
-        return 0;
+        return mImageResourceId;
     }
 
     public String toString() {

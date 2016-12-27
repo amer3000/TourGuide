@@ -13,10 +13,9 @@ public class ShopsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.poi_list);
         final ArrayList<PointOfInterest> pointOfInterests = new ArrayList<>();
-        pointOfInterests.add(new PointOfInterest("Branch Hollow Park", "409 Hebron Parkway"));
-        pointOfInterests.add(new PointOfInterest("Carrollton Greenbelt Park", "20 N josey Ln"));
-        pointOfInterests.add(new PointOfInterest("BBQ Tonight", "Great park"));
-        pointOfInterests.add(new PointOfInterest("Boba Cafe", "Awesomeness"));
+        pointOfInterests.add(new PointOfInterest("Willowbend Mall", "Nothing fancy here, but it is quiet."));
+        pointOfInterests.add(new PointOfInterest("Jack's Westerns", "Get some cowboy boots & hats."));
+        pointOfInterests.add(new PointOfInterest("Judy's", "Hidden little nook in downtown. You can find awesome antiques here."));
 
         PointOfInterestAdaptor adaptor = new PointOfInterestAdaptor(this, pointOfInterests);
         ListView listView = (ListView) findViewById(R.id.list);

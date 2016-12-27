@@ -14,10 +14,15 @@ public class ParksActivity extends AppCompatActivity {
         setContentView(R.layout.poi_list);
 
         final ArrayList<PointOfInterest> pointOfInterests = new ArrayList<>();
-        pointOfInterests.add(new PointOfInterest("Branch Hollow Park", "409 Hebron Parkway"));
-        pointOfInterests.add(new PointOfInterest("Carrollton Greenbelt Park", "20 N josey Ln"));
-        pointOfInterests.add(new PointOfInterest("BBQ Tonight", "Great park"));
-        pointOfInterests.add(new PointOfInterest("Boba Cafe", "Awesomeness"));
+        pointOfInterests.add(new PointOfInterest("Branch Hollow Park", "Bike and running trails. Light traffic."));
+        pointOfInterests.add(new PointOfInterest("Carrollton Greenbelt Park", "Only place to play disc golf in Carrollton"));
+        pointOfInterests.add(new PointOfInterest("Harvest Run Park", "A little neighborhood park"));
+        pointOfInterests.add(new PointOfInterest("Arbor Hills Trails", "Wilderness in middle of suburbs. Great hiking and biking trails."));
+
+        PointOfInterest poi = new PointOfInterest("Arbor Hills Trails", "Wil");
+        poi.setImage(R.drawable.test);
+
+        pointOfInterests.add(poi);
 
         PointOfInterestAdaptor adaptor = new PointOfInterestAdaptor(this, pointOfInterests);
         ListView listView = (ListView) findViewById(R.id.list);
