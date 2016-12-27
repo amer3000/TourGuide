@@ -14,10 +14,10 @@ public class RestaurantsActivity extends AppCompatActivity {
         setContentView(R.layout.poi_list);
 
         final ArrayList<PointOfInterest> pointOfInterests = new ArrayList<>();
-        pointOfInterests.add(new PointOfInterest("Babe's Chicken"));
-        pointOfInterests.add(new PointOfInterest("Andy's Custard"));
-        pointOfInterests.add(new PointOfInterest("BBQ Tonight"));
-        pointOfInterests.add(new PointOfInterest("Boba Cafe"));
+        pointOfInterests.add(new PointOfInterest("Babe's Chicken", "23 Main Street"));
+        pointOfInterests.add(new PointOfInterest("Andy's Custard", "4067 Hebron Parkway"));
+        pointOfInterests.add(new PointOfInterest("BBQ Tonight", "1507 Old Denton Hwy"));
+        pointOfInterests.add(new PointOfInterest("Boba Cafe", "102 State Hwy 121"));
 
         PointOfInterestAdaptor adaptor = new PointOfInterestAdaptor(this, pointOfInterests);
         ListView listView = (ListView) findViewById(R.id.list);

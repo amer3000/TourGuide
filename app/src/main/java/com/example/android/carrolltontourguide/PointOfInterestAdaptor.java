@@ -33,11 +33,11 @@ public class PointOfInterestAdaptor extends ArrayAdapter<PointOfInterest> {
 
         PointOfInterest pointOfInterest = getItem(position);
 
-        TextView poiTextview = (TextView) listItemView.findViewById(R.id.poi_text_view);
-        poiTextview.setText(pointOfInterest.toString());
+        TextView poiTextView = (TextView) listItemView.findViewById(R.id.poi_text_view);
+        poiTextView.setText(pointOfInterest.toString());
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        defaultTextView.setText(pointOfInterest.toString());
+        defaultTextView.setText(pointOfInterest.getDescription());
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
@@ -51,8 +51,6 @@ public class PointOfInterestAdaptor extends ArrayAdapter<PointOfInterest> {
             // Otherwise hide the ImageView (set visibility to GONE)
             imageView.setVisibility(View.GONE);
         }
-
-
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

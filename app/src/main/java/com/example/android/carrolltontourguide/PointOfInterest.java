@@ -6,21 +6,16 @@ package com.example.android.carrolltontourguide;
 
 public class PointOfInterest {
 
-
     private String mName;
 
-    private String mAddress;
-
-    private String mPhone;
-
-    private String mWebsite;
-
+    private String mDescription;
 
     private int mImageResourceId;
 
 
-    public PointOfInterest(String name) {
+    public PointOfInterest(String name, String description) {
         mName = name;
+        mDescription = description;
     }
 
 
@@ -32,5 +27,11 @@ public class PointOfInterest {
         return 0;
     }
 
-    public String toString() { return mName; }
+    public String toString() {
+        return mName;
+    }
+
+    public String getDescription() {
+        return mDescription;
+    }
 }
